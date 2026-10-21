@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071116" />
+    <title>Vesper & Vine — A meeting of taste</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader-inner">
+        <span class="preloader-kicker">Vesper &amp; Vine / Since 1987</span>
+        <strong>V</strong>
+        <span class="preloader-line"><i></i></span>
+        <span class="preloader-status">Entering the cellar <b>0%</b></span>
+      </div>
+    </div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"><span>View</span></div>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <a class="brand-lockup" href="#top" aria-label="Vesper and Vine home"
+        ><span class="brand-crest">V</span><span>VESPER <i>&</i> VINE</span></a
+      >
+      <nav class="main-nav" id="navLinks" aria-label="Main navigation">
+        <a href="#philosophy">Our story</a>
+        <a href="#ritual">Our craft</a>
+        <a href="#newsletter">The society</a>
+      </nav>
+      <div class="header-actions">
+        <div class="header-quick-links">
+          <a href="#newsletter">Shop wines</a>
+          <a href="#newsletter">Book a visit</a>
+        </div>
+        <button class="bag-button" id="openCart" type="button">
+          Bag <b id="cartCount">0</b>
+        </button>
+      </div>
+    </header>
+
+    <aside class="menu-panel" id="menuPanel" aria-hidden="true">
+      <div class="menu-panel-top">
+        <span>Vesper &amp; Vine / Index</span>
+        <button class="menu-close" id="menuClose" type="button" aria-label="Close navigation">Close <i>×</i></button>
+      </div>
+      <div class="menu-panel-body">
+        <nav class="menu-panel-links" aria-label="Full navigation">
+          <a href="#philosophy"><span>01</span>Our story <b>↗</b></a>
+          <a href="#ritual"><span>02</span>Our craft <b>↗</b></a>
+          <a href="#newsletter"><span>03</span>The society <b>↗</b></a>
+        </nav>
+        <div class="menu-panel-note">
+          <p>Wine made personal.</p>
+          <p>Good bottles, generous<br />company, no rush.</p>
+          <span>New York · Paris · Everywhere</span>
+        </div>
+      </div>
+      <div class="menu-panel-bottom"><span>© 2024 Vesper &amp; Vine</span><span>Drink beautifully.</span></div>
+    </aside>
+
+    <main id="top">
+      <section class="hero-stage">
+        <div class="hero-media">
+          <img
+            src="fourth-page-reference.png"
+            alt="Rupert and Rothschild wine bottle on a table"
+          />
+        </div>
+        <div class="hero-vignette"></div>
+        <div class="hero-orbit hero-orbit-a"></div>
+        <div class="hero-orbit hero-orbit-b"></div>
+        <div class="hero-edition">
+          V&V / Edition 01<br /><span>For nights worth remembering</span>
+        </div>
+        <div class="hero-count">01 <span>/</span> 04</div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">
+            <span></span> Independent wine, intensely personal
+          </p>
+          <h1>A meeting<br /><em>of two worlds.</em></h1>
+          <p class="hero-copy">
+            A shared belief in the power of a bottle to make a moment tangible.
+            Crafted with precision, opened with pleasure.
+          </p>
+          <div class="hero-actions">
+            <a class="hero-cta" href="#philosophy">Discover our story <span>↗</span></a>
+            <a class="hero-secondary-cta" href="#newsletter">Shop wines <span>↗</span></a>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span>Scroll to explore</span><span class="hero-rule"></span
+          ><span>↓</span
+          ><span class="hero-bottom-right">New York · Paris · Everywhere</span>
+        </div>
+      </section>
+
+      <section class="story-section" id="philosophy">
+        <div class="section-index reveal">[ 01 / The story ]</div>
+        <div class="story-heading reveal">
+          <span>It starts</span><br />with a <em>feeling.</em>
+        </div>
+        <div class="story-copy reveal">
+          <p>
+            Vesper & Vine is a meeting place for growers, makers, hosts, and the
+            quietly curious. We search for wines that hold a little tension —
+            generous, precise, and alive in the glass.
+          </p>
+          <a class="line-link" href="#ritual"
+            >Read our point of view <span>↗</span></a
+          >
+        </div>
+        <div class="story-foot reveal">
+          <span class="gold-dot"></span><span>Since 1987</span
+          ><span class="story-foot-rule"></span
+          ><span>Good taste, generously shared</span>
+        </div>
+      </section>
+
+      <section class="craft-section" id="ritual">
+        <div class="craft-image reveal">
+          <img
+            src="reference-bottle.jpg"
+            alt="Dark wine bottle and red wine beside it"
+          /><span class="image-note">The ritual / 02</span>
+        </div>
+        <div class="craft-copy reveal">
+          <p class="eyebrow"><span></span> Our craft</p>
+          <h2>Make room<br /><em>for wonder.</em></h2>
+          <p class="craft-body">
+            Every bottle begins somewhere specific: a slope, a season, a hand
+            that knows when to wait. We bring those stories to your table with a
+            little less ceremony and a lot more care.
+          </p>
+          <a class="gold-link" href="#newsletter"
+            >Join the society <span>↗</span></a
+          >
+        </div>
+        <div class="craft-quote reveal">
+          “The best bottles make<br />ordinary evenings <em>glow.</em>”<small
+            >— House notes, vol. 01</small
+          >
+        </div>
+      </section>
+
+      <section class="society-section" id="newsletter">
+        <div class="society-top reveal">
+          <span class="section-index">[ 04 / The society ]</span
+          ><span class="society-mark">V&V</span>
+        </div>
+        <div class="society-body">
+          <div class="society-heading reveal">
+            Stay close<br /><em>to the good stuff.</em>
+          </div>
+          <div class="society-copy reveal">
+            <p>
+              Seasonal notes, cellar doors, and a reason to open something
+              wonderful on a Tuesday.
+            </p>
+            <form class="newsletter-form" id="newsletterForm">
+              <label class="sr-only" for="email">Email address</label
+              ><input
+                id="email"
+                type="email"
+                placeholder="Your email address"
+                required
+              /><button type="submit">Join the society <span>↗</span></button>
+            </form>
+            <p class="form-note" id="newsletterNote">
+              No noise. Just good taste, once or twice a month.
+            </p>
+          </div>
+        </div>
+        <div class="society-footer reveal">
+          <span>Vesper & Vine / Correspondence</span
+          ><span class="society-rule"></span><span>For the curious</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <a class="brand-lockup" href="#top"
+          ><span class="brand-crest">V</span
+          ><span>VESPER <i>&</i> VINE</span></a
+        >
+        <p>
+          A cellar with a point of view.<br />A table with room for everyone.
+        </p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <span>Explore</span><a href="#philosophy">Our story</a
+          ><a href="#ritual">Our craft</a><a href="#newsletter">The society</a>
+        </div>
+        <div>
+          <span>Say hello</span
+          ><a href="mailto:hello@vesperandvine.test">Email us ↗</a
+          ><a href="#newsletter">Join the society</a
+          ><a href="#top">Instagram ↗</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Vesper & Vine</span
+        ><span>Drink beautifully. Drink responsibly.</span
+        ><span>Made for the curious.</span>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="drawer-head">
+        <div>
+          <p class="section-index">[ Your selection ]</p>
+          <h2>On the <em>table.</em></h2>
+        </div>
+        <button
+          class="close-button"
+          id="closeCart"
+          type="button"
+          aria-label="Close shopping bag"
+        >
+          ×
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="empty-cart">
+          <span>✦</span>
+          <p>Your bag is waiting<br /><em>for something good.</em></p>
+          <a href="#newsletter" id="browseFromCart">Join the society ↗</a>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Subtotal</span><strong id="cartTotal">$0</strong>
+        </div>
+        <p class="shipping-note">Complimentary shipping on 6+ bottles.</p>
+        <button
+          class="checkout-button"
+          id="checkoutButton"
+          type="button"
+          disabled
+        >
+          Continue to checkout <span>↗</span>
+        </button>
+      </div>
+    </aside>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+    <div class="modal-backdrop" id="checkoutBackdrop">
+      <section
+        class="checkout-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="checkoutTitle"
+      >
+        <button
+          class="close-button modal-close"
+          id="closeCheckout"
+          type="button"
+          aria-label="Close checkout"
+        >
+          ×
+        </button>
+        <div class="checkout-intro">
+          <p class="section-index">[ Almost there ]</p>
+          <h2 id="checkoutTitle">Make it <em>official.</em></h2>
+          <p>
+            Your bottles are reserved. Enter your details to complete this demo
+            order.
+          </p>
+        </div>
+        <form id="checkoutForm" class="checkout-form">
+          <div class="form-row">
+            <label
+              >First name<input
+                name="firstName"
+                required
+                placeholder="Amelia" /></label
+            ><label
+              >Last name<input name="lastName" required placeholder="Pond"
+            /></label>
+          </div>
+          <label
+            >Email address<input
+              type="email"
+              name="checkoutEmail"
+              required
+              placeholder="amelia@example.com" /></label
+          ><label
+            >Delivery address<input
+              name="address"
+              required
+              placeholder="12 Garden Street"
+          /></label>
+          <div class="form-row">
+            <label
+              >City<input name="city" required placeholder="New York" /></label
+            ><label
+              >Postcode<input name="postcode" required placeholder="10001"
+            /></label>
+          </div>
+          <div class="payment-label">
+            <span>Payment details</span><span>VISA · MC · AMEX</span>
+          </div>
+          <label
+            >Card number<input
+              name="card"
+              inputmode="numeric"
+              required
+              minlength="12"
+              placeholder="4242 4242 4242 4242"
+          /></label>
+          <div class="form-row">
+            <label
+              >Expiry<input
+                name="expiry"
+                required
+                placeholder="09 / 28" /></label
+            ><label
+              >CVC<input name="cvc" required minlength="3" placeholder="123"
+            /></label>
+          </div>
+          <button class="checkout-submit" type="submit">
+            Place demo order <span>↗</span>
+          </button>
+          <p class="secure-note">
+            ⌁ Secure checkout · This is a front-end demo, no payment is
+            processed.
+          </p>
+        </form>
+        <div class="order-success" id="orderSuccess">
+          <div class="success-seal">V</div>
+          <p class="section-index">[ It’s on its way ]</p>
+          <h2>Beautifully <em>done.</em></h2>
+          <p>
+            Your order <strong id="orderNumber">VV-00000</strong> has been
+            noted. Expect a little joy at your door soon.
+          </p>
+          <button class="checkout-submit" id="closeSuccess" type="button">
+            Back to the cellar <span>↗</span>
+          </button>
+        </div>
+      </section>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
